@@ -5,3 +5,18 @@
 h1 {
      color: red;
 }
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+.card {
+     width: 700px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #97AF94;
+     border: 2px dashed rebeccapurple;
+}
