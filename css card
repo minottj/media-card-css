@@ -1,4 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <title>Responsive Card Layout</title>
+    <p>Flex no-wrap</p>
+    <div class="flex no-wrap">
+      <div class="col"></div>
+    </div>
     
+    <p>Flex wrap</p>
+    <div class="flex wrap">
+      <div class="col"></div>
+    </div>
