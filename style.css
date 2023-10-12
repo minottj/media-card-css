@@ -2,21 +2,50 @@
      font-family: 'DIN Condensed';
     background-color: #97AF94; 
 }
-h1 {
-     color: red;
-}
-body {
+body{
      display: flex;
-     justify-content: center;
+     justify-content:Center; 
      align-items: center;
      height: 100vh;
+     font-family: 'DIN Condensed';
 }
+section{
+     range:url('birk1.png');
+     
+}
+h1 {
+     font-size: 5rem;
+     color: #4F4949;
+     font-family: 'DIN Condensed';
+     height:
+}
+.Title{
+     display:flex; 
+     vertical-align: top;
+     top: 75px; right: 100px;
+     font-family: 'DIN Condensed';
+
+}
+h2 {
+     color:#938A8A ;
+     font-family: 'DIN Condensed';
+}
+h3 {
+     color:#4F4949;
+     font-family: 'DIN Condensed';
+}
+.description{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+}   
+
 .card {
      width: 700px;
      height: 400px;
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #97AF94;
-     border: 2px dashed rebeccapurple;
+     background-color:#D8E3D6;
+     border: 2px rebeccapurple;
 }
