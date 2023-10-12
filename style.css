@@ -11,46 +11,62 @@ body{
 }
 section{
      range:url('birk1.png');
-     
+      
 }
-h1 {
-     font-size: 5rem;
-     color: #4F4949;
-     font-family: 'DIN Condensed';
-     height:
-}
-.Title{
-     display:flex; 
-     vertical-align: top;
-     top: 75px; right: 100px;
-     font-family: 'DIN Condensed';
-
-}
-h2 {
-     color:#938A8A ;
-     font-family: 'DIN Condensed';
-}
-h3 {
-     color:#4F4949;
-     font-family: 'DIN Condensed';
-}
-.description{
-          display:flex;
-          justify-content:center;
-          align-items:center;
-}   
-h4{
-     color:#4F4949
-     font-family: 'DIN Condensed';
-
-}
-
 .card {
      width: 700px;
      height: 400px;
-     display: flex;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
      justify-content: center;
      align-items: center;
      background-color:#D8E3D6;
      border: 2px rebeccapurple;
 }
+.right{
+     display:flex; 
+     flex-direction: column;
+     vertical-align: top;
+     line-height: 100px ;
+     top: 50px; right: 100px;
+     font-family: 'DIN Condensed';
+     line-height:normal;
+     letter-spacing: normal;
+     padding-left: 7%;
+}
+h1 {
+     font-size: 5rem;
+     color: #4F4949;
+     font-family: 'DIN Condensed';
+     margin: 2%;
+}
+h2 {
+     font-size: 2rem;
+     color:#938A8A;
+     font-family: 'DIN Condensed';
+     margin: 0%;
+}
+h4{
+     font-size: 3rem;
+     color:#4F4949;
+     margin: 0%;
+}
+h5{
+     font-size: 3rem;
+     color: #938A8A;
+     font-family: 'DIN Condensed';
+     margin: 0%;
+
+}
+.left{
+          display:flex;
+          flex-direction: column;
+          justify-content:center;
+          align-items:center;
+}   
+p {
+     color:#938A8A ;
+     font-family: 'DIN Condensed';
+}
+
+
