@@ -39,6 +39,11 @@ h3 {
           justify-content:center;
           align-items:center;
 }   
+h4{
+     color:#4F4949
+     font-family: 'DIN Condensed';
+
+}
 
 .card {
      width: 700px;
