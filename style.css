@@ -21,7 +21,7 @@ section{
      justify-content: center;
      align-items: center;
      background-color:#D8E3D6;
-     border: 2px rebeccapurple;
+     border: 2px solid #4F4949;
 }
 .right{
      display:flex; 
@@ -45,24 +45,25 @@ h1 {
 h2 {
      font-size: 2rem;
      color:#938A8A;
-     font-family: 'DIN Condensed';
+     font-family: 'DIN Alternate';
      margin: 0%;
 }
 h4{
      font-size: 3rem;
-     color:#4F4949;
+     color:#6D6767;
      margin: 0%;
+     font-family: 'DIN Condensed';
 }
 h5{
      font-size: 3rem;
      color: #938A8A;
-     font-family: 'DIN Condensed';
+     font-family: 'DIN Alternate';
      margin: 0%;
 }
 h6{
-     font-size:3rem;
-     color: #4F4949;
-     font-family: 'DIN Condensed';
+     font-size:2.3rem;
+     color: #6D6767;
+     font-family: 'DIN Alternate';
      margin: 0%;
      padding-top: 10%;
 
@@ -77,10 +78,17 @@ h6{
 }   
 p {
      color:#938A8A ;
-     font-family: 'DIN Condensed';
-     font-size: 1.8rem;
+     font-family: 'DIN Alternate';
+     font-size: 1.6rem;
 }
 .left img{
      width: 87%;
+     opacity: 1;
+     cursor: pointer;
+     transition: all .25s ease-out;
+}
+.left img:hover{
+     transform:scale(1.3)
+
 }
 
