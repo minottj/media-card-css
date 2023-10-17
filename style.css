@@ -25,20 +25,22 @@ section{
 }
 .right{
      display:flex; 
-     flex-direction: column;
-     vertical-align: top;
+     flex-direction:column;
+     vertical-align:top;
      line-height: 100px ;
-     top: 50px; right: 100px;
-     font-family: 'DIN Condensed';
-     line-height:normal;
+     top: 30px; right: 100px;
+     font-family:'DIN Condensed';
+     line-height:250%;
      letter-spacing: normal;
      padding-left: 7%;
+     padding-bottom:20%;
+     
 }
 h1 {
      font-size: 5rem;
      color: #4F4949;
      font-family: 'DIN Condensed';
-     margin: 2%;
+     margin: 0%;
 }
 h2 {
      font-size: 2rem;
@@ -56,6 +58,13 @@ h5{
      color: #938A8A;
      font-family: 'DIN Condensed';
      margin: 0%;
+}
+h6{
+     font-size:3rem;
+     color: #4F4949;
+     font-family: 'DIN Condensed';
+     margin: 0%;
+     padding-top: 10%;
 
 }
 .left{
@@ -63,12 +72,15 @@ h5{
           flex-direction: column;
           justify-content:center;
           align-items:center;
+          padding-top: 0%;
+          padding-left: 10%;
 }   
 p {
      color:#938A8A ;
      font-family: 'DIN Condensed';
+     font-size: 1.8rem;
 }
 .left img{
-     width: 70%;
+     width: 87%;
 }
 
