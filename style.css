@@ -3,15 +3,20 @@
     background-color: #97AF94; 
 }
 body{
-     display: flex;
-     justify-content:Center; 
-     align-items: center;
      height: 100vh;
      font-family: 'DIN Condensed';
 }
 section{
      range:url('birk1.png');
       
+}
+.cardgrid{
+     display: grid;
+     grid-template-rows: auto;
+     grid-template-columns: 1fr;
+     grid-gap: 2rem;
+     margin: 2rem 2vw;
+     max-width: ;
 }
 .topnav { 
      background-color: var(--dark);
@@ -33,10 +38,10 @@ section{
      gap: 2rem;
      text-transform: uppercase;
      font-weight: 500;
-   }   
+} 
 .card {
-     width: 700px;
-     height: 400px;
+     width: 50%;
+     height: auto;
      display: grid;
      grid-template-columns: 1fr 1fr;
      justify-content: center;
