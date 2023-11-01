@@ -8,6 +8,9 @@ body{
 }
 section{
      range:url('birk1.png');
+     range:url('brownbirks.png');
+     range:url('sandalsbirk.png');
+     range:url('blackbirks.png');
       
 }
 .cardgrid{
@@ -27,6 +30,13 @@ section{
      text-transform: uppercase;
      font-weight: 500;
 } 
+.site-footer {
+  background-color:#D8E3D6;
+  padding: 1em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card {
      height: auto;
      display: grid;
