@@ -16,13 +16,21 @@ section{
 .captiontext {
      background: rgba(0,0,0,0.4); /*-- transparent black background --*/
      color: #f2f2f2; /*-- sets color to almost white --*/
-     font-size: 22px; /*-- sets font size --*/
+     font-size: 30px; /*-- sets font size --*/
      padding: 8px 12px; /*-- sets caption padding --*/
      position: absolute; /*-- positions caption text absolutely--*/
-     bottom: 8px; /*-- sets position 8px from bottom --*/
+     bottom: 212px; /*-- sets position 8px from bottom --*/
      width: 100%; /*-- sets width equal to container width --*/
      text-align: center; /*-- aligns text center --*/
    }
+.numberof {
+     color: #f2f2f2; /*-- sets color to almost white --*/
+     font-size: 20px; /*-- sets font size --*/
+     font font-family: 'DIN Condensed';
+     padding: 8px 12px; /*-- sets numberof padding --*/
+     position: absolute; /*-- positions numberof text absolutely--*/
+     top: 100; /*-- sets position hard to the top--*/
+   }  
 .indicator img {
   width: 100% !important; /*-- small images fill available space --*/
 }  
@@ -175,7 +183,7 @@ p {
      width: auto; /*-- matches width of parent --*/
      padding: 16px; /*-- adds a little bit of space--*/
      margin-top: -22px; /*-- adjusts position by height of arrows --*/
-     color: #938A8A; /*-- sets color for contrast --*/
+     color: #f2f2f2; /*-- sets color for contrast --*/
      font-weight: bold; /*-- selects heavier font --*/
      font-size:35px; /*-- sets arrow font size --*/
      transition: 0.6s ease; /*-- sets transition speed for arrow hover--*/
@@ -189,3 +197,4 @@ p {
      right: 0; /*-- positions next arrow hard right --*/
      border-radius: 3px 0 0 3px; /*-- rounds the outside borders --*/
    }
+   
