@@ -13,6 +13,19 @@ section{
      range:url('blackbirks.png');
       
 }
+.captiontext {
+     background: rgba(0,0,0,0.4); /*-- transparent black background --*/
+     color: #f2f2f2; /*-- sets color to almost white --*/
+     font-size: 22px; /*-- sets font size --*/
+     padding: 8px 12px; /*-- sets caption padding --*/
+     position: absolute; /*-- positions caption text absolutely--*/
+     bottom: 8px; /*-- sets position 8px from bottom --*/
+     width: 100%; /*-- sets width equal to container width --*/
+     text-align: center; /*-- aligns text center --*/
+   }
+.indicator img {
+  width: 100% !important; /*-- small images fill available space --*/
+}  
 .cardgrid{
      display: grid;
      grid-template-rows: auto;
@@ -31,7 +44,18 @@ section{
      gap: 2rem;
      text-transform: uppercase;
      font-weight: 500;
+     z-index: 1000; /*-- makes navbar always sit in the front, on the z-axis--*/
+     width: 100%;
 } 
+a.nav-item {
+     position: relative; /*-- overcomes negative margin in above rule --*/
+     top: 4px; /*-- tweaks vertical position --*/
+     text-align: center; /*-- center-aligns all text inside their boxes --*/
+     padding: .75em 0; /*-- provides padding inside menu items --*/
+     margin: auto 0; /*-- centers menu text vertically --*/
+     color: var(--rev-text);
+     transition: color 250ms ease-in-out; /*-- specifies transition, duration, and easing --*/
+   }
 @media screen and (max-width: 767px) {
      .topnav a, .topnav span {display: none;}
      .topnav a.trigram {display:inherit; position:absolute; right:4%; font-size:2em; padding: .25em; background:var(--prime);}
@@ -144,5 +168,24 @@ p {
      transform:scale(1.3)
 
 }
-
-   
+.prev, .next{
+     cursor: pointer; /*-- changes hover cursor to the hand --*/
+     position: absolute; /*-- positions arrows absolutely--*/
+     top: 50%; /*-- positions arrows half the height of parent from top --*/
+     width: auto; /*-- matches width of parent --*/
+     padding: 16px; /*-- adds a little bit of space--*/
+     margin-top: -22px; /*-- adjusts position by height of arrows --*/
+     color: #938A8A; /*-- sets color for contrast --*/
+     font-weight: bold; /*-- selects heavier font --*/
+     font-size:35px; /*-- sets arrow font size --*/
+     transition: 0.6s ease; /*-- sets transition speed for arrow hover--*/
+     border-radius: 0 3px 3px 0; /*-- slightly rounds inside borders --*/
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
+     user-select: none; /*-- prevents users from selecting buttons --*/
+   }
+   .next {
+     right: 0; /*-- positions next arrow hard right --*/
+     border-radius: 3px 0 0 3px; /*-- rounds the outside borders --*/
+   }
