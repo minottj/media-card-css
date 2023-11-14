@@ -19,14 +19,14 @@ section{
      font-size: 30px; /*-- sets font size --*/
      padding: 8px 12px; /*-- sets caption padding --*/
      position: absolute; /*-- positions caption text absolutely--*/
-     bottom: 212px; /*-- sets position 8px from bottom --*/
+     bottom: 160px; /*-- sets position 8px from bottom --*/
      width: 100%; /*-- sets width equal to container width --*/
      text-align: center; /*-- aligns text center --*/
    }
 .numberof {
      color: #f2f2f2; /*-- sets color to almost white --*/
      font-size: 20px; /*-- sets font size --*/
-     font font-family: 'DIN Condensed';
+     font-family: 'DIN Condensed';
      padding: 8px 12px; /*-- sets numberof padding --*/
      position: absolute; /*-- positions numberof text absolutely--*/
      top: 100; /*-- sets position hard to the top--*/
@@ -41,7 +41,7 @@ section{
      grid-gap: 2rem;
      margin: 2rem 2vw;
 }
-.topnav { 
+.topnav{ 
      background-color:#D8E3D6;
      color: #4F4949;
      font-family: 'DIN alternate';
@@ -91,6 +91,7 @@ a.nav-item {
    }
    .slideshow-wrapper img {
      width: 100%; /*-- makes slideshow responsive in size --*/
+     margin: 212px;
    }
 .site-footer {
   background-color:#D8E3D6;
@@ -118,8 +119,7 @@ a.nav-item {
      line-height:250%;
      letter-spacing: normal;
      padding-left: 7%;
-     padding-bottom:20%;
-     
+     padding-bottom:20%;     
 }
 h1 {
      font-size: 5rem;
@@ -180,9 +180,9 @@ p {
      cursor: pointer; /*-- changes hover cursor to the hand --*/
      position: absolute; /*-- positions arrows absolutely--*/
      top: 50%; /*-- positions arrows half the height of parent from top --*/
+     transform: translateY(-100%);
      width: auto; /*-- matches width of parent --*/
      padding: 16px; /*-- adds a little bit of space--*/
-     margin-top: -22px; /*-- adjusts position by height of arrows --*/
      color: #f2f2f2; /*-- sets color for contrast --*/
      font-weight: bold; /*-- selects heavier font --*/
      font-size:35px; /*-- sets arrow font size --*/
