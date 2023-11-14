@@ -44,7 +44,7 @@ section{
 .topnav{ 
      background-color:#D8E3D6;
      color: #4F4949;
-     font-family: 'DIN alternate';
+     font-family: 'Oswald', sans-serif;
      padding: 1em 4rem;
      display: flex;
      align-items: end;
@@ -99,6 +99,7 @@ a.nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family:'Oswald', sans-serif;
 }
 .card {
      height: auto;
@@ -122,22 +123,22 @@ a.nav-item {
      padding-bottom:20%;     
 }
 h1 {
-     font-size: 5rem;
+     font-size: 4rem;
      color: #4F4949;
-     font-family: 'DIN condensed';
+     font-family: 'Oswald', sans-serif;
      margin: 0%;
 }
 h2 {
      font-size: 2rem;
      color:#938A8A;
-     font-family: 'DIN Alternate';
+     font-family: 'Quicksand', sans-serif;
      margin: 0%;
 }
 h4{
-     font-size: 3rem;
+     font-size: 2rem;
      color:#6D6767;
      margin: 0%;
-     font-family: 'DIN Condensed';
+     font-family: 'DIN Alternate';
 }
 h5{
      font-size: 3rem;
