@@ -14,6 +14,7 @@ section{
       
 }
 .captiontext {
+     cursor: pointer;
      background: rgba(0,0,0,0.4); /*-- transparent black background --*/
      color: #f2f2f2; /*-- sets color to almost white --*/
      font-size: 30px; /*-- sets font size --*/
