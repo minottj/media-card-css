@@ -32,27 +32,53 @@ a.nav-item {
      color: var(--rev-text);
      transition: color 250ms ease-in-out; /*-- specifies transition, duration, and easing --*/
      cursor: pointer;
-   }   
+}   
 a.nav-item:hover {
      color: var(--accent);
      cursor: pointer; /*-- changes menu items to pointer on hover --*/
 }
 .label {
-     font-size: 1rem;
+     
 }  
-.nav-item.trigram {
+
+
+a.nav-link {
+  padding-left: 2.8rem;
+  color: var(--dark);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+a.nav-link:hover {
+  color: var(--accent);
+}
+a.nav-link.logo {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+a#trigram {
+  display: none;
+}
+a#trigram::before {
+  content: '\2630';
+  font-size: 4rem;
+  position: relative;
+  top: -.5rem;
+  right: 0;
+}
+.nav-item.trigram{
      display: none; /*-- hides trigram (hamburger menu button) by default --*/
      text-decoration: none; /*-- removes underline --*/
      font-size: 2rem; /*-- makes much larger than normal text--*/
-   }
+}
    /*-- Mobile Nav Queries --*/
    /*--At screens BELOW 768px, hides nav menu items and displays trigram --*/
-   @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
      .topnav a, .topnav span {display: none;}
      .topnav a.trigram {display:inherit; position:absolute; right:4%; font-size:2em; padding: .25em; background:var(--prime);}
-   }
+}
    /*-- At screens BELOW 768px,  rules for mobile nav--*/
-   @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
      .topnav.responsive {align-items: center;} /*-- vertically centers--*/
      .topnav.responsive a, .topnav.responsive span {display:inherit;} /*-- makes menu items visible --*/
      .topnav.responsive a:first-child {margin-top:1em;} /*-- adds space above first item --*/
@@ -60,24 +86,24 @@ a.nav-item:hover {
      .topnav.responsive a.more {margin-bottom: 1em;} /*-- adds margin below bottom item --*/
      .topnav.responsive a.trigram {visibility:hidden; transition:none;} /*-- hides trigram when open --*/
      .topnav.responsive a.trigram:after {content:'\000D7'; visibility:visible; text-indent: -.5em;} /*-- replaces trigram sign with x-sign on mobile. --*/
-   }
+}
    /*-- At screens 768px and ABOVE, set normal menu defaults --*/
-   @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
      .topnav {display: flex; flex-direction: row; justify-content: space-between;}
-   }
+}
    /*-- Styles for slideshow --*/
-   .slideshow {
+.slideshow {
      background-color: var(--bg);
      padding: 1em;
-   }
-   .slideshow-wrapper {
+}
+.slideshow-wrapper {
      position: relative; /*-- this allows children to be position absolutely --*/
      margin: auto; /*-- simple centering method--*/  max-width: 100%; /*-- contrains slideshow on largest screens --*/
-   }
-   .slideshow-wrapper img {
+}
+.slideshow-wrapper img {
      width: 100%; /*-- makes slideshow responsive in size --*/
-   }
-   .prev, .next {
+}
+.prev, .next {
      cursor: pointer; /*-- changes hover cursor to the hand --*/
      position: absolute; /*-- positions arrows absolutely--*/
      top: 50%; /*-- positions arrows half the height of parent from top --*/
@@ -93,30 +119,14 @@ a.nav-item:hover {
      -webkit-user-select: none;
      -ms-user-select: none;
      user-select: none; /*-- prevents users from selecting buttons --*/
-   }
-   .next {
+}
+.next {
      right: 0; /*-- positions next arrow hard right --*/
      border-radius: 3px 0 0 3px; /*-- rounds the outside borders --*/
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+@media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
+     .modal-body {grid-template-columns: 7fr 5fr;}
+}
 .captiontext {
      cursor: pointer;
      background: rgba(0,0,0,0.4); /*-- transparent black background --*/
@@ -127,7 +137,7 @@ a.nav-item:hover {
      bottom: 160px; /*-- sets position 8px from bottom --*/
      width: 100%; /*-- sets width equal to container width --*/
      text-align: center; /*-- aligns text center --*/
-   }
+}
 .numberof {
      color: #f2f2f2; /*-- sets color to almost white --*/
      font-size: 20px; /*-- sets font size --*/
@@ -135,7 +145,7 @@ a.nav-item:hover {
      padding: 8px 12px; /*-- sets numberof padding --*/
      position: absolute; /*-- positions numberof text absolutely--*/
      top: 100; /*-- sets position hard to the top--*/
-   }  
+}  
 .text-center {
      display: flex;
 }  
@@ -309,13 +319,84 @@ p {
      -webkit-user-select: none;
      -ms-user-select: none;
      user-select: none; /*-- prevents users from selecting buttons --*/
-   }
-   .next {
+}
+.next {
      right: 0; /*-- positions next arrow hard right --*/
      border-radius: 3px 0 0 3px; /*-- rounds the outside borders --*/
-   }
-   
-
+}
+.slideshow {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+}
+.slides {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+}
+.slides {
+     display: none;
+}
+.slides img {
+     padding: 0;
+}
+.thumbs {
+     display: flex;
+     gap: 1rem;
+}
+.thumbs img {
+     opacity: .5;
+     cursor: pointer;
+     transition: all .25s ease-in-out;
+     border: 2px dotted transparent;
+}
+.thumbs img:hover, img.active {
+     opacity: 1;
+}
+.img.active {
+     border: 2px dotted var(--accent);
+}
+.controls {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+}
+.controls button {
+     cursor: pointer;
+     position: absolute;
+     color: var(--light);
+     background-color: rgba(0,0,0,0.2);
+     border: none;
+     padding: 0 2.2rem 1.5rem 2rem;
+     border-radius: 3px;
+     font-weight: 800;
+     font-size: 8rem;
+     transition: 0.2s ease;
+}
+.controls button:hover {
+     color: var(--accent);
+     background-color: rgba(0,0,0,0.7);
+}
+.controls button:nth-child(1) {
+     left: 1%;
+}
+.controls button:nth-child(2) {
+     right: 1%;
+}
+.caption-wrap {
+     position: absolute;
+     bottom: .5rem;
+     width: 100%;
+     background-color: rgba(0,0,0,.5);
+     padding: .5rem 1rem;
+     font-size: 2.2rem;
+     text-align: center;
+     color: var(--ltmid);
+}
 
 
 

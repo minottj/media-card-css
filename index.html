@@ -21,11 +21,13 @@
                   <a>HOME</a>
                   <a>STYLES</a>
                   <a>ABOUT</a>
-                  <a href="javascript:void(0);" class="nav-item trigram">&#9776;</a>
+                  <a class="nav-item more">
+                    <span class="label"><i class="fas fa-ellipsis-h"></i>More</span>
+                  </a>
+                  <a href="#" class="nav-link" id="trigram" onclick="navToggle()"></a>
+                  <a href="javascript:void(0);" class="nav-item trigram" onclick="navToggle()">&#9776;</a>
                 </nav>
             </header>   
-
-            
         <section class="slideshow">
                 <div class="slideshow-wrapper">
                   <div class="slide fade">
@@ -34,12 +36,12 @@
                     <div class="captiontext">Match with your loved ones.</div>
                   </div><!-- end .slide.fade -->
                   <div class="slide fade">
-                    <div class="numberof">2 of 4</div>
+                    <div class="numberof">2 of 3</div>
                     <img src="birkpic2.png"/>
                     <div class="captiontext">Be stylish wherever you go.</div>
                   </div><!-- end .slide.fade -->
                   <div class="slide fade">
-                    <div class="numberof">3 of 4</div>
+                    <div class="numberof">3 of 3</div>
                     <img src="birkpic3.png"/>
                     <div class="captiontext">New color for the fall.</div>
                   </div><!-- end .slide.fade -->
@@ -54,7 +56,7 @@
                     <span class="indicator" onclick="currentSlide(3)"><img src="birkpic3.png"/></span>
                   </div>
                 </section>
-    
+                
          <section class="cardgrid">
     <section class="card">
         <div class="left">
@@ -74,7 +76,6 @@
         <div class="left">
         <img src="brownbirks.png" alt="">
         <p>An icon of timeless design and legendary comfort, the Arizona sandal has been defining style since 1973. The laid-back look comes in durable Birko-Flor® for a classic, leather-like finish.
-
         </p>
     </div>
         <div class="right">
@@ -118,4 +119,10 @@
 <footer class="site-footer">
     <p>&copy;2023 Julia Minotti</p>
   </footer>
+  <script>
+    feather.replace();
+  </script>
+  <script src="js/page.js"></script>
+
+
 </html>
