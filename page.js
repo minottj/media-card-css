@@ -13,9 +13,9 @@ function navToggle() {
 /*--- 
 Slideshow functions 
 --*/
+// Next/previous controls
 let slideIndex = 1;
 showSlides(slideIndex);
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -26,7 +26,8 @@ function currentSlide(n) {
 //main slideshow function
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("slides");
+  let slides = document.getElementsByClassName("slide");
+  console.log(slides);
   let dots = document.getElementsByClassName("thumb");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1};
@@ -41,27 +42,27 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
+// // Modal logic
+// document.querySelectorAll('.open-modal').forEach(openBtn => {
+//   openBtn.addEventListener('click', event => {
+//     let cardContent = event.target.previousElementSibling;
+//     let modalContent = document.getElementById('modal-wrap');
+//     modalContent.appendChild(cardContent.cloneNode(true));
+//     modalContent.classList.add('show');
+//   })
+// });
+// document.getElementById('modal-wrap').addEventListener('click', event => {
+//   let modalContent = document.getElementById('modal-wrap');
+//   let cardContent = modalContent.firstElementChild;
+//   if (modalContent.className === 'show') {
+//     modalContent.innerHTML = '';
+//     modalContent.classList.remove('show');
+//     event.preventDefault();
+//     console.log(cardContent);
+//     return false;
+//   }
+// });
 
-// Modal logic
-document.querySelectorAll('.open-modal').forEach(openBtn => {
-  openBtn.addEventListener('click', event => {
-    let cardContent = event.target.previousElementSibling;
-    let modalContent = document.getElementById('modal-wrap');
-    modalContent.appendChild(cardContent.cloneNode(true));
-    modalContent.classList.add('show');
-  })
-});
-document.getElementById('modal-wrap').addEventListener('click', event => {
-  let modalContent = document.getElementById('modal-wrap');
-  let cardContent = modalContent.firstElementChild;
-  if (modalContent.className === 'show') {
-    modalContent.innerHTML = '';
-    modalContent.classList.remove('show');
-    event.preventDefault();
-    console.log(cardContent);
-    return false;
-  }
-});
 
 
 

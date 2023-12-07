@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="modnorm.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" >
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" >
+    <link rel="stylesheet" href="modnorm.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -32,35 +32,44 @@
                 <div class="slideshow-wrapper">
                   <div class="slide fade">
                     <div class="numberof">1 of 3</div>
-                    <img src="birkenstockcopy.png"/>
-                    <div class="captiontext">Match with your loved ones.</div>
+                    <img src="birkenstockcopy.png" alt="some alt text">
+                    <div class="captiontext" id="caption1">Match with your loved ones.</div>
                   </div><!-- end .slide.fade -->
                   <div class="slide fade">
                     <div class="numberof">2 of 3</div>
-                    <img src="birkpic2.png"/>
-                    <div class="captiontext">Be stylish wherever you go.</div>
+                    <img src="birkpic2.png" alt="some alt text">
+                    <div class="captiontext" id="caption2">Be stylish wherever you go.</div>
                   </div><!-- end .slide.fade -->
                   <div class="slide fade">
                     <div class="numberof">3 of 3</div>
-                    <img src="birkpic3.png"/>
-                    <div class="captiontext">New color for the fall.</div>
+                    <img src="birkpic3.png" alt="some alt text">
+                    <div class="captiontext" id="caption3">New color for the Fall.</div>
+                  </div><!-- end .slide.fade -->
+                  <div class="slide fade">
+                    <div class="numberof">3 of 3</div>
+                    <img src="birk4.png" alt="some alt text">
+                    <div class="captiontext" id="caption3">New color for the Fall.</div>
                   </div><!-- end .slide.fade -->
         
+
+
+
+
+
                   <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
                   <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
                 </div><!--end slideshow-wrapper-->
-                <br />
                 <div class="text-center">
-                    <span class="indicator" onclick="currentSlide(1)"><img src="birkenstockcopy.png"/></span>
-                    <span class="indicator" onclick="currentSlide(2)"><img src="birkpic2.png"/></span>
-                    <span class="indicator" onclick="currentSlide(3)"><img src="birkpic3.png"/></span>
+                    <span class="indicator thumb" onclick="currentSlide(1)"><img src="birkenstockcopy.png" alt="some alt text"></span>
+                    <span class="indicator thumb" onclick="currentSlide(2)"><img src="birkpic2.png" alt="some alt text"></span>
+                    <span class="indicator thumb" onclick="currentSlide(3)"><img src="birkpic3.png" alt="some alt text"></span>
                   </div>
-                </section>
+            </section>
                 
          <section class="cardgrid">
     <section class="card">
         <div class="left">
-        <img src="birk3.png" alt="">
+        <img src="birk3.png" alt="some alt text">
         <p>Our most sought-after clog, the Boston lends a fashion-forward edge to any style. Velvety suede gives the laid-back look classic, every season appeal. Featuring an additional foam layer for cushioning, the soft footbed offers extra comfort plus go-all-day support.
         </p>
     </div>
@@ -74,7 +83,7 @@
     </section>
     <section class="card">
         <div class="left">
-        <img src="brownbirks.png" alt="">
+        <img src="brownbirks.png" alt="some alt text">
         <p>An icon of timeless design and legendary comfort, the Arizona sandal has been defining style since 1973. The laid-back look comes in durable Birko-Flor® for a classic, leather-like finish.
         </p>
     </div>
@@ -88,7 +97,7 @@
     </section>
     <section class="card">
         <div class="left">
-        <img src="blackbirks.png" alt="">
+        <img src="blackbirks.png" alt="some alt text">
         <p>The BIRKENSTOCK Boston is a veritable classic that can easily be worn all year round. The Boston has a legendary status thanks to its sophisticated, individual design. Shown in EVA, a synthetic waterproof and lightweight material.
         </p>
     </div>
@@ -102,7 +111,7 @@
 </section>
 <section class="card">
     <div class="left">
-    <img src="sandalsbirk.png" alt="">
+    <img src="sandalsbirk.png" alt="some alt text">
     <p>The legendary two-strap design from BIRKENSTOCK - the Arizona. Modeled on the cork original, this sandal is made from ultra lightweight and highly flexible EVA. These sandals are shock absorbing, waterproof, and skin-friendly. Wear them anywhere.
     </p>
 </div>
@@ -115,14 +124,12 @@
     </div>
     </section>
 </section>
-</body>
+
 <footer class="site-footer">
     <p>&copy;2023 Julia Minotti</p>
-  </footer>
-  <script>
-    feather.replace();
-  </script>
-  <script src="js/page.js"></script>
+</footer>
 
+  <script src="page.js"></script>
+</body>
 
 </html>
